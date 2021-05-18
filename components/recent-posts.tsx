@@ -1,4 +1,5 @@
 import PostPreview from './post-preview';
+import SectionTitle from './section-title';
 import Post from '../types/post'
 
 type Props = {
@@ -8,9 +9,7 @@ type Props = {
 const RecentPosts = ({ recentPosts }: Props) => {
   return (
     <section>
-      <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
-        Recent Posts
-      </h2>
+      <SectionTitle>Recent Posts</SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
         {recentPosts.map((post) => (
           <PostPreview
