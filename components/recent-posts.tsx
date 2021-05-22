@@ -18,6 +18,7 @@ const RecentPosts = ({ recentPosts }: Props) => {
             coverImage={post.coverImage}
             date={post.date}
             author={post.author}
+            category={post.category}
             slug={post.slug}
             excerpt={post.excerpt}
           />
